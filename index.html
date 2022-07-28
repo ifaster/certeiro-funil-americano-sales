@@ -657,21 +657,21 @@
     </div>
   </body>
   <script type="text/javascript">
-    // setTimeout(() => {
-    //   const stepTwo = document.querySelectorAll('#stepTwo');
+    setTimeout(() => {
+      const stepTwo = document.querySelectorAll('#stepTwo');
 
-    //   stepTwo.forEach(box => {
-    //     box.classList.remove('stepTwo');
-    //   });
+      stepTwo.forEach(box => {
+        box.classList.remove('stepTwo');
+      });
       
-    //   const stepOne = document.querySelectorAll('#stepOne');
+      const stepOne = document.querySelectorAll('#stepOne');
 
-    //   stepOne.forEach(box => {
-    //     box.classList.remove('stepOne');
-    //     box.classList.add('stepTwo');
-    //   });
+      stepOne.forEach(box => {
+        box.classList.remove('stepOne');
+        box.classList.add('stepTwo');
+      });
             
 
-    // }, 10000); 
+    }, 30000); 
   </script>  
 </html>
