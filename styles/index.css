@@ -194,11 +194,26 @@ section.depoimentos {
   display: flex;
 }
 
-.headline{
+.headlineProsperidade{
   background-color: #ffffff5e;
   margin: 10px;
   position: relative;
 }
+
+.tituloHeadlineProsperidade{
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: #341e52;
+}
+
+.linhasProsperidade{
+  padding: 10px; 
+  justify-content: space-around;
+  align-items: flex-start;
+  
+}
+
 @media (min-width: 100px) {
   /* smartphones, iPhone, portrait 480x320 phones */
   .subTituloEnfase {
@@ -222,6 +237,9 @@ section.depoimentos {
   } 
   .linha .linhaPrecos{
     flex-direction: row;
+  }
+  .linhaProsperidade{
+    margin-bottom: 5px;
   }
 }
 
@@ -249,6 +267,9 @@ section.depoimentos {
   .sessaoDois .tituloEnfase{
     font-size: 1.5rem;
     color: white;
+  }  
+  .linhaProsperidade{
+    margin-bottom: unset;
   }  
 }
 
