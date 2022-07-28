@@ -156,7 +156,7 @@ section.depoimentos {
 
 .linhaPrecos .por{
   color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 
@@ -205,6 +205,7 @@ section.depoimentos {
   font-weight: 800;
   text-align: center;
   color: #341e52;
+  line-height: 1.6rem;
 }
 
 .linhasProsperidade{
@@ -241,6 +242,14 @@ section.depoimentos {
   .linhaProsperidade{
     margin-bottom: 5px;
   }
+  .containerPrecos{
+    align-items: center;    
+  }
+  .boxPreco .linha .tituloEnfase.preco{
+    font-size: 4rem;
+    padding: 20px 0px;
+    color: #341e52;
+  }  
 }
 
 @media (min-width: 481px) {
@@ -271,6 +280,9 @@ section.depoimentos {
   .linhaProsperidade{
     margin-bottom: unset;
   }  
+  .linha.containerPrecos{
+    flex-direction: column;    
+  }  
 }
 
 @media (min-width: 641px) {
@@ -282,9 +294,18 @@ section.depoimentos {
     font-size: 2rem;
     color: white;
   }    
+  .linha.containerPrecos{
+    flex-direction: row;    
+    align-items: stretch;
+  }    
+  .boxPreco .linha .tituloEnfase.preco{
+    font-size: 1.5rem;
+    padding: 20px 0px;
+    color: #341e52;
+  }    
 }
 
-@media (min-width: 961px) {
+@media (min-width: 900px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .sessaoUm{
     max-width: 60%;
@@ -293,6 +314,11 @@ section.depoimentos {
     font-size: 2.5rem;
     color: white;
   }     
+  .boxPreco .linha .tituloEnfase.preco{
+    font-size: 4rem;
+    padding: 20px 0px;
+    color: #341e52;
+  }    
 }
 
 @media (min-width: 1025px) {
