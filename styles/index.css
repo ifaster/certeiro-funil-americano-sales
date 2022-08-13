@@ -196,8 +196,8 @@ section.depoimentos {
 
 .headlineProsperidade{
   background-color: #ffffff5e;
-  margin: 10px;
-  position: relative;
+  margin-top: 10px;
+  padding-left: 0px!important;
 }
 
 .tituloHeadlineProsperidade{
@@ -215,6 +215,15 @@ section.depoimentos {
   
 }
 
+.alertaSemGarantia{
+  background-color: white; 
+  color: rgb(179, 36, 126); 
+  font-weight: 200;
+  text-align: center;  
+  font-size: 1rem;
+  padding-bottom: 2px;
+}
+
 @media (min-width: 100px) {
   /* smartphones, iPhone, portrait 480x320 phones */
   .subTituloEnfase {
@@ -225,6 +234,10 @@ section.depoimentos {
   }
   .linha {
     flex-direction: column;
+    
+  }
+  .containerSessaoUm{
+    justify-content: flex-start;
   }
   .linha p {
     font-size: 0.7rem;
@@ -235,6 +248,7 @@ section.depoimentos {
   }
   .sessaoUm{
     max-width: unset;
+    align-content: space-around;
   } 
   .linha .linhaPrecos{
     flex-direction: row;
@@ -282,6 +296,9 @@ section.depoimentos {
   }  
   .linha.containerPrecos{
     flex-direction: column;    
+  }  
+  .containerSessaoUm{
+    justify-content: flex-end;
   }  
 }
 

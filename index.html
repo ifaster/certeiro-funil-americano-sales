@@ -21,27 +21,27 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/favicons/apple-touch-icon.png"
+      href="./favicons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/favicons/favicon-32x32.png"
+      href="./favicons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/favicons/favicon-16x16.png"
+      href="./favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="manifest" href="./favicons/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="/favicons/safari-pinned-tab.svg"
+      href="./favicons/safari-pinned-tab.svg"
       color="#5bbad5"
     />
-    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <link rel="shortcut icon" href="./favicons/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,9 +54,9 @@
     <meta name="msapplication-TileColor" content="#2d89ef" />
     <meta
       name="msapplication-TileImage"
-      content="/favicons/mstile-144x144.png"
+      content="./favicons/mstile-144x144.png"
     />
-    <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+    <meta name="msapplication-config" content="./favicons/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
 
     <meta property="og:locale" content="pt_BR" />
@@ -91,7 +91,8 @@
     <link rel="stylesheet" type="text/css" href="styles/index.css" />
     <link rel="stylesheet" type="text/css" href="styles/w3.css" />
     <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles/player.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="v_embed.css"> -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
@@ -119,7 +120,7 @@
         </h1>
       </div>      
 
-      <div class="linha containerSessaoUm">
+      <div id="containerSessaoUm" class="linha containerSessaoUm">
         <div class="linha sessaoUm">
           <div id="stepOne" class="detalhe headlineProsperidade">
             <h1 class="tituloHeadlineProsperidade">
@@ -176,25 +177,12 @@
               >
             </div>
           </div>
-          <div class="detalhe video"
-            style="
-              width: 100%;
-              align-items: center;
-              margin-top: 10px;
-              padding: 0px 10px;
-            "
-          >
-            <div class="linha" style="padding: 0px 10px">
-              <img
-                loading="lazy"
-                src="./img/video.svg"
-                alt="Certeiro mostrando todos os públicos escondidos do Facebook"
-                class="responsiveImage"
-              />
-            </div>
+          <div class="detalhe video smart-player-embed-container" style="width: 99%; margin-top: 10px;">
+            <iframe class="smart-player-embed-iframe" style="min-height: 340px;" id="embeddedSmartPlayerInstance" src="v_player.html?embedIFrameId=embeddedSmartPlayerInstance" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           </div>
+          <script src="scripts/embedded-smart-player.min.js"></script>          
           <div id="stepOne" class="detalhe" style="width: 100%; margin: 10px;">
-            <h1 style="background-color: white; color: rgb(179, 36, 126); font-weight: 600;text-align: center;"> * Sem garantias que amanhã, ou mesmo se fechar essa janela, continuará gratuito.</h1>
+            <h1 class="alertaSemGarantia"> * Sem garantias que amanhã, ou mesmo se fechar essa janela, continuará gratuito.</h1>
           </div>
         </div>
       </div>
@@ -647,16 +635,21 @@
         />
       </div>
       <div class="detalhe" style="padding: 0px 10px">
-        <p style="color: white; text-align: right; font-size: 0.6rem">
+        <p style="color: white; text-align: right; font-size: 0.6rem;margin-top: 0px;margin-bottom: 0px;">
           Todos os direitos reservados 2022 Tec-Info
         </p>
-        <p style="color: white; text-align: right; font-size: 0.6rem">
+        <p style="color: white; text-align: right; font-size: 0.6rem;margin-top: 0px;margin-bottom: 0px;">
           Este site não faz parte e/ou foi endossado pelo Facebook™
         </p>
       </div>
     </div>
   </body>
   <script type="text/javascript">
+    sessaoUm = document.getElementById('containerSessaoUm');
+
+
+    sessaoUm.style.minHeight = (document.documentElement.clientHeight - 82)+'px';
+
     setTimeout(() => {
       const stepTwo = document.querySelectorAll('#stepTwo');
 
@@ -672,6 +665,6 @@
       });
             
 
-    }, 10); 
+    }, 260000); 
   </script>  
 </html>
