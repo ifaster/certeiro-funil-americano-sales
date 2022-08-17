@@ -224,6 +224,10 @@ section.depoimentos {
   padding-bottom: 2px;
 }
 
+/* .smart-player-embed-iframe{
+  width: 98%;
+} */
+
 @media (min-width: 100px) {
   /* smartphones, iPhone, portrait 480x320 phones */
   .subTituloEnfase {
@@ -264,7 +268,24 @@ section.depoimentos {
     padding: 20px 0px;
     color: #341e52;
   }  
+  /* .smart-player-embed-iframe{
+    min-height: 200px;
+  } */
 }
+
+/* @media (min-width:101px) and (max-width: 320px){
+  .smart-player-embed-iframe{
+    min-height: 173px;
+  }
+
+} */
+
+
+/* @media (min-width:320px) and (max-width: 480px){
+  .smart-player-embed-iframe{
+    min-height: 246px;
+  }
+} */
 
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
@@ -300,7 +321,16 @@ section.depoimentos {
   .containerSessaoUm{
     justify-content: flex-end;
   }  
+  /* .smart-player-embed-iframe{
+    min-height: 341px;
+  }   */
 }
+/* 
+@media (min-width: 481px) and (max-width: 640px) {
+  .smart-player-embed-iframe{
+    min-height: 320px;
+  }  
+} */
 
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
@@ -319,6 +349,9 @@ section.depoimentos {
     font-size: 1.5rem;
     padding: 20px 0px;
     color: #341e52;
+  }    
+  .smart-player-embed-iframe{
+    min-height: 341px;
   }    
 }
 

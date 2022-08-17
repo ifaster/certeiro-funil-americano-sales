@@ -98,6 +98,11 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <meta name="Certeiro" content="Certeiro - Mudando o jogo pra você" />
     <title>Treinamento gratuito - Facebook™ Ads</title>
+    <script type="text/javascript">
+      function resizeIframe(obj){
+         obj.style.height = obj.contentWindow.document.body.scrollHeight + 100 + 'px' ;
+      }
+    </script>
   </head>
 
   <body>
@@ -178,7 +183,7 @@
             </div>
           </div>
           <div class="detalhe video smart-player-embed-container" style="width: 99%; margin-top: 10px;">
-            <iframe class="smart-player-embed-iframe" style="min-height: 340px;" id="embeddedSmartPlayerInstance" src="v_player.html?embedIFrameId=embeddedSmartPlayerInstance" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <iframe onload='resizeIframe(this)' class="smart-player-embed-iframe" id="embeddedSmartPlayerInstance" src="v_player.html?embedIFrameId=embeddedSmartPlayerInstance" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           </div>
           <script src="scripts/embedded-smart-player.min.js"></script>          
           <div id="stepOne" class="detalhe" style="width: 100%; margin: 10px;">
